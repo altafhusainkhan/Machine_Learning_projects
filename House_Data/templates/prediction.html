@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Prediction</title>
+</head>
+
+<body>
+    <h1>Welcome to the Prediction page</h1>
+
+    <form action="/data" method="post"> 
+        <div>
+        <label>Area of house in sqft</label>
+        <input type="number" name='area' placeholder="area" required='required'/>
+        </div> 
+        <br>
+        <div>
+            <label>Number of rooms in the house</label>
+            <input type="number" name='rooms' placeholder="rooms" required='required'/>
+        </div> 
+        <br>
+        <div>
+            <label>Number of bathrooms in the house</label>
+            <input type="number" name='bathroom' placeholder="bathroom" required='required'/>
+        </div> 
+        <br>
+        <div>
+            <label>Number of floors in the house</label>
+            <input type="number" name='floors' placeholder="floors" required='required'/>
+        </div> 
+        <br>
+        <div>
+            <label>Is driveway present?</label>
+			<select name=driveway>
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+            </select> 
+        </div>  
+        <br>
+        <div>
+            <label>Is game room present?</label>
+			<select name=game_room>
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+            </select> 
+        </div>  
+        <br>
+        <div>
+            <label>Is game cellar present?</label>
+			<select name=cellar>
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+            </select> 
+        </div> 
+        <br>
+        <div>
+            <label>Is gas supply present?</label>
+			<select name=gas>
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+            </select> 
+        </div>
+        <br>
+        <div>
+            <label>Is gas air conditioning present?</label>
+			<select name=air>
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+            </select> 
+        </div>
+        <br>
+        <div>
+            <label>Number of garages in the house</label>
+            <input type="number" name='garage' placeholder="garage" required='required'/>
+        </div> 
+        <br>
+        <div>
+            <label>House located beside the road?</label>
+			<select name=situation>
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+            </select> 
+        </div>
+        <br>
+        
+    
+        <button type='submit'>Predict the price</button>
+
+
+    </form>
+</body>
+
+
+
+
+
+</html>
